@@ -1,0 +1,51 @@
+2019-11-29 16:17:59 INFO     Arguments:
+2019-11-29 16:17:59 INFO     	dataset = voc2007
+2019-11-29 16:17:59 INFO     	backbone = resnet101
+2019-11-29 16:17:59 INFO     	data_dir = ../data
+2019-11-29 16:17:59 INFO     	outputs_dir = ../outputs
+2019-11-29 16:17:59 INFO     	resume_checkpoint = None
+2019-11-29 16:17:59 INFO     	image_min_side = None
+2019-11-29 16:17:59 INFO     	image_max_side = None
+2019-11-29 16:17:59 INFO     	anchor_ratios = None
+2019-11-29 16:17:59 INFO     	anchor_sizes = None
+2019-11-29 16:17:59 INFO     	pooler_mode = None
+2019-11-29 16:17:59 INFO     	rpn_pre_nms_top_n = None
+2019-11-29 16:17:59 INFO     	rpn_post_nms_top_n = None
+2019-11-29 16:17:59 INFO     	anchor_smooth_l1_loss_beta = None
+2019-11-29 16:17:59 INFO     	proposal_smooth_l1_loss_beta = None
+2019-11-29 16:17:59 INFO     	batch_size = None
+2019-11-29 16:17:59 INFO     	learning_rate = None
+2019-11-29 16:17:59 INFO     	momentum = None
+2019-11-29 16:17:59 INFO     	weight_decay = None
+2019-11-29 16:17:59 INFO     	step_lr_sizes = None
+2019-11-29 16:17:59 INFO     	step_lr_gamma = None
+2019-11-29 16:17:59 INFO     	warm_up_factor = None
+2019-11-29 16:17:59 INFO     	warm_up_num_iters = None
+2019-11-29 16:17:59 INFO     	num_steps_to_display = None
+2019-11-29 16:17:59 INFO     	num_steps_to_snapshot = None
+2019-11-29 16:17:59 INFO     	num_steps_to_finish = None
+2019-11-29 16:17:59 INFO     
+Config:
+	ANCHOR_RATIOS = [(1, 2), (1, 1), (2, 1)]
+	ANCHOR_SIZES = [128, 256, 512]
+	ANCHOR_SMOOTH_L1_LOSS_BETA = 1.0
+	BATCH_SIZE = 50
+	IMAGE_MAX_SIDE = 1000.0
+	IMAGE_MIN_SIDE = 600.0
+	LEARNING_RATE = 0.001
+	MOMENTUM = 0.9
+	NUM_STEPS_TO_DISPLAY = 3
+	NUM_STEPS_TO_FINISH = 150
+	NUM_STEPS_TO_SNAPSHOT = 30
+	POOLER_MODE = Mode.ALIGN
+	PROPOSAL_SMOOTH_L1_LOSS_BETA = 1.0
+	RPN_POST_NMS_TOP_N = 2000
+	RPN_PRE_NMS_TOP_N = 12000
+	STEP_LR_GAMMA = 0.1
+	STEP_LR_SIZES = [50000, 70000]
+	WARM_UP_FACTOR = 0.3333
+	WARM_UP_NUM_ITERS = 500
+	WEIGHT_DECAY = 0.0005
+
+2019-11-29 16:17:59 INFO     Found 150 samples
+2019-11-29 16:18:07 INFO     Start training with 4 GPUs (12 batches per GPU)

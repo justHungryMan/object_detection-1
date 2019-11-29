@@ -18,7 +18,22 @@ os.system('mv VOCdevkit ssd/VOCdevkit')
 
 os.system('conda install -c conda-forge graphviz')
 os.system('conda install -c conda-forge python-graphviz')
-'''
+
 os.chdir('ssd')
 os.system('python3 create_data_lists.py')
 os.chdir('..')
+'''
+
+os.system('conda install -c conda-forge pyyaml sympy h5py cython numpy scipy pandas matplotlib tqdm tensorboardX menpo opencv3 easydict graphviz python-graphviz python3-dev')
+os.system('pip install --upgrade pip')
+os.system('conda install -c dgursoy gcc-5')
+# os.system('wget -O yolov3/yolov3.weights https://pjreddie.com/media/files/yolov3.weights')
+
+# If collect2 error occurs,
+# os.system('conda remove mkl mkl-include')
+# os.system('conda install numpy pyyaml mkl=2019.3 mkl-include setuptools cmake cffi typing')
+
+os.chdir('faster-rcnn')
+os.system('python support/setup.py develop')
+# If "nvcc fatal unsupported gpu arch 'compute_75'" error occurs,
+# os.system("export TORCH_CUDA_ARCH_LIST='7.0'")

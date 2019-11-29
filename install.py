@@ -1,5 +1,6 @@
 import os
-'''
+
+os.system('conda install pytorch torchvision')
 os.system('conda install pip pyyaml sympy h5py cython numpy scipy pandas matplotlib')
 os.system('conda install -c menpo opencv3')
 os.system('pip install --upgrade pip')
@@ -18,7 +19,10 @@ os.system('mv VOCdevkit ssd/VOCdevkit')
 
 os.system('conda install -c conda-forge graphviz')
 os.system('conda install -c conda-forge python-graphviz')
+<<<<<<< HEAD
 
+=======
+>>>>>>> c813f732acb682fd35bfcac54d4dbfccdaf8b8d9
 os.chdir('ssd')
 os.system('python3 create_data_lists.py')
 os.chdir('..')
